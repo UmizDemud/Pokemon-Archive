@@ -1,0 +1,37 @@
+.abilities__title {
+	padding: 0 2rem;
+}
+
+.ability {
+	padding: 1rem 2rem;
+}
+
+.ability__desc {
+	padding: 0.5rem 0 1rem;
+	text-indent: 2rem;
+}
+
+.ability__value {
+	padding: 1rem 2rem 0;
+	font-weight: 0.5rem;
+	font-style: italic;
+}
+
+
+@media screen and (max-width: 440px) {
+	.abilities__title {
+		padding: 0 0.5rem;
+	}
+
+	.ability {
+		padding: 1rem 0.5rem;
+	}
+	
+	.ability__desc {
+		padding: 0.5rem 0rem 1rem;
+	}
+	
+	.ability__value {
+		padding: 1rem 1rem 0;
+	}
+}

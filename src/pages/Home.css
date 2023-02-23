@@ -1,0 +1,45 @@
+.home {
+	position: relative; 
+	transition: min-height 0.3s;
+	color: #f6f6f6;
+}
+
+.home__background {
+	position: absolute;
+	width: 100%;
+	object-fit: contain;
+	opacity: 0.5;
+}
+
+.home__main {
+	position: absolute;
+	box-sizing: border-box;
+	border-radius: 7px;
+	width: 80%;
+	left: 50%;
+	top: 2rem;
+	padding: 1rem;
+	transform: translateX(-50%);
+	background-color: #000c;
+}
+
+.home__title {
+	margin: 0.5rem auto;
+	padding: 0.25rem 1rem;
+	width: fit-content;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+}
+
+@media screen and (max-width: 440px) {
+	.home__main {
+		width: 90%;
+		padding: 0.5rem;
+	}
+
+	.home__title {
+		margin: 0.25rem auto;
+		padding: 0.25rem 0.5rem;
+		font-size: 1.3rem;
+	}	
+}

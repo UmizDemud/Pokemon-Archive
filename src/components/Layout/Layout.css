@@ -1,0 +1,91 @@
+.main {
+	margin: 0 auto;	
+	background-color: #fefefe;
+}
+
+.header {
+	--height: 80px;
+	--logo-height: 70px;
+	height: var(--height);
+	width: 100%;
+	display: block;
+	background-color: #212121;
+	box-sizing: border-box;
+	color: #fff;
+
+	--paddings: 20px;
+}
+
+.inner_header {
+	height: 100%;
+	max-width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo_container {
+	margin-top: calc((var(--height) - var(--logo-height)) / 2);
+	height: var(--logo-height);
+	display: table;
+	float: left;
+	padding-left: var(--paddings);
+}
+
+.logo_container * {
+	color: #fff;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.nav {
+	float: right;
+	height: 100%;
+	padding: 0 12px;
+}
+
+.nav a {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0 var(--paddings);
+}
+
+.nav a li {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.placeholder {
+	background-color: var(--bc_primary-selected);
+	border-radius: 14px;
+	animation: glisten 2s ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.footer {
+	height: 6rem;
+	margin-top: 4rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #222;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.footer > * {
+	width: 40%;
+}
+
+@media screen and (max-width: 440px) {
+	.header {
+		--paddings: 10px;
+	}
+	.footer {
+		font-size: 0.9rem;
+	}
+}

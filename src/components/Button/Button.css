@@ -1,0 +1,47 @@
+.btn {
+	position: relative;
+	height: var(--button-size);
+	width: var(--button-size);
+	box-sizing: content-box;
+
+	border: 2px solid #202020;
+
+	transition: background-color 0.3s;
+}
+
+.btn__img {
+	height: var(--button-size);
+	width: var(--button-size);
+}
+
+.btn:hover {
+	background-color: #d3d3a6aa;
+}
+
+.btn .btn__tltp-txt {
+	position: absolute;
+  visibility: hidden;
+  background-color: #d3d3a6;
+  color: #000;
+	font-weight: 500;
+	line-height: 1.5;
+  text-align: center;
+  padding: 0;
+  border-radius: 6px;
+	opacity: 0;
+
+	transition: opacity 0.3s, padding 0.3s;
+	overflow: hidden;
+
+  position: absolute;
+	bottom: -50px;
+	left: 2rem;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.btn:hover .btn__tltp-txt {
+  visibility: visible;
+	padding: 0.6rem 0.9rem;
+	opacity: 1;
+}

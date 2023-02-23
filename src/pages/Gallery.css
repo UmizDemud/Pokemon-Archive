@@ -1,0 +1,19 @@
+
+.gallery__images {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.gallery__images div:not(:has(.gallery-image--load)) {
+	display: none;
+}
+
+.gallery .PokemonPage__nav {
+	width: 400px;
+	margin: 3rem auto 1rem;
+	font-size: 1.4rem;
+	justify-content: space-between;
+}
