@@ -2,7 +2,7 @@ import './Home.css'
 
 export const Home = () => {
 
-	const size = `calc(100vh - 80px - 10rem)`;
+	const size = `calc(100svh - 80px - 10rem)`;
 
 	return (
 		<div style={{ minHeight: size }} className="page home">
