@@ -5,7 +5,7 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 19px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
 
@@ -16,6 +16,12 @@
   -webkit-text-size-adjust: 100%;
 
   --button-size: 30px;
+}
+
+@media screen and (max-width: 2400px) {
+  :root {
+    font-size: 19px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
