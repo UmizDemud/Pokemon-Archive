@@ -35,7 +35,7 @@ export const PokedexItem = ({ pokemon }) => {
 				) : (
 					<p>?</p>
 				)}
-				<p style={{ gap: "5px" }}>
+				<p style={{ gap: "0.3rem" }}>
 					{pokemon[Pokemon.Types].map((type) => (
 						<img
 							key={type}
@@ -53,7 +53,7 @@ export const PokedexItem = ({ pokemon }) => {
 				>
 					<p style={{lineHeight: '1.2'}}>
 						<img
-							style={{ width: "20px", height: "20px", marginTop: '4px' }}
+							style={{ width: "1.3rem", height: "1.3rem", marginTop: '4px' }}
 							src={lookSvg}
 							alt="extend stats"
 						/>
