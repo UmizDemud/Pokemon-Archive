@@ -4,7 +4,7 @@
 	margin: 0 auto;
 	text-align: center;
 	overflow: hidden;
-	--col-size: 50px;
+	--col-size: 6rem;
 	--medium-col-size: calc(var(--col-size) / 5 * 6);
 	--med-lar-col-size: calc(var(--col-size) / 3 * 5);
 	--large-col-size: calc(var(--col-size) * 2)
@@ -79,7 +79,6 @@
 }
 
 .pokemon__panel {
-	max-width: 300px;
 	width: fit-content;
 	display: flex;
 	margin: 0 auto;
@@ -99,9 +98,10 @@
 	background-color: #303030;
 	border: none;
 	color: #fff;
+	font-size: 1rem;
 	font-weight: 500;
 	width: 5rem;
-	height: calc(var(--button-size) + 4);
+	height: calc(var(--button-size) + 4px);
 	box-sizing: border-box;
 	padding: 0.6rem;
 	padding-left: 1rem;
@@ -131,6 +131,7 @@
 
 @media screen and (max-width: 440px) {
 	.pokedex {
+		width: unset;
 		font-size: 0.6rem;
 		--col-size: 30px;
 	}

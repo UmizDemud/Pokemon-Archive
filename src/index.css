@@ -15,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --button-size: 30px;
+  --button-size: 2rem;
 }
 
 @media screen and (max-width: 2400px) {
